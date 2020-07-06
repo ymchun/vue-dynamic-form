@@ -1,0 +1,15 @@
+.browserslistrc
+.editorconfig
+.eslintrc.js
+.gitignore
+.prettierignore
+.prettierrc
+.travis.yml
+.vscode
+babel.config.js
+dist/demo.html
+node_modules
+publish.sh
+src
+tsconfig.json
+vue.config.js
