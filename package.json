@@ -1,10 +1,11 @@
 {
   "name": "@ymchun/vue-dynamic-form",
   "version": "0.0.1",
+  "private": false,
   "main": "dist/dynamic-form.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-dynamic-form src/main.ts",
+    "build": "vue-cli-service build --target lib src/main.ts && rm dist/demo.html",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

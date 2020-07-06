@@ -16,9 +16,6 @@
 <script lang="ts">
 import { PropType, defineComponent } from '@vue/composition-api'
 
-import { DynamicFormFieldItemConfig } from '../../interfaces/dynamic-form'
-import { KeyMap } from '../../interfaces/global'
-
 export default defineComponent({
   name: 'dynamic-form-radio-field-item',
   props: {

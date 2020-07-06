@@ -19,11 +19,6 @@
 <script lang="ts">
 import { PropType, computed, defineComponent, reactive } from '@vue/composition-api'
 
-import {
-  DynamicFormFieldItemConfig,
-  DynamicFormSectionItemConfig,
-} from '../interfaces/dynamic-form'
-import { KeyMap } from '../interfaces/global'
 import ButtonFieldItem from './fieldItems/ButtonFieldItem.vue'
 import CheckboxFieldItem from './fieldItems/CheckboxFieldItem.vue'
 import ComboboxFieldItem from './fieldItems/ComboxFieldItem.vue'

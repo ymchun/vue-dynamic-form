@@ -1,11 +1,9 @@
-import { KeyMap } from './global'
-
-export interface DynamicFormConfig {
+interface DynamicFormConfig {
   model: KeyMap<any>
   section: DynamicFormSectionItemConfig
 }
 
-export interface DynamicFormSectionItemConfig {
+interface DynamicFormSectionItemConfig {
   orientation: 'row' | 'column'
   items: Array<DynamicFormSectionItemConfig | DynamicFormFieldItemConfig>
   align?: {
@@ -18,7 +16,7 @@ export interface DynamicFormSectionItemConfig {
   size?: string // css compatible size, width for column, height for row
 }
 
-export interface DynamicFormFieldItemConfig {
+interface DynamicFormFieldItemConfig {
   component: string // form field item component class name
   data?: any | any[] | KeyMap<any> // data supply to vuetify component
   hidden?: boolean // flag determine whether to show the item

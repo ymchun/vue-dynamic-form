@@ -12,8 +12,6 @@
 <script lang="ts">
 import { PropType, computed, defineComponent, reactive } from '@vue/composition-api'
 
-import { DynamicFormConfig } from '../interfaces/dynamic-form'
-
 export default defineComponent({
   name: 'dynamic-form',
   props: {
