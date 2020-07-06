@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG_NAME="ng-simple-markdown-editor"
+PKG_NAME="@ymchun/vue-dynamic-form"
 LATEST_VER=`npm show $PKG_NAME version`
 ROOT_PATH=$(pwd)
 
