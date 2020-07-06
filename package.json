@@ -1,6 +1,6 @@
 {
   "name": "@ymchun/vue-dynamic-form",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "dist/dynamic-form.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
