@@ -19,6 +19,7 @@
 <script lang="ts">
 import { PropType, computed, defineComponent, reactive } from '@vue/composition-api'
 
+import { DynamicFormFieldItemConfig, DynamicFormSectionItemConfig } from '../types/dynamic-form'
 import ButtonFieldItem from './field-items/button-field-item.vue'
 import CheckboxFieldItem from './field-items/checkbox-field-item.vue'
 import ComboboxFieldItem from './field-items/combobox-field-item.vue'
@@ -48,7 +49,7 @@ export default defineComponent({
       required: true,
     },
     model: {
-      type: Object as PropType<KeyMap<any>>,
+      type: Object,
       required: true,
     },
   },

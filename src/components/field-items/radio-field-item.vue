@@ -16,6 +16,8 @@
 <script lang="ts">
 import { PropType, defineComponent } from '@vue/composition-api'
 
+import { DynamicFormFieldItemConfig } from '../../types/dynamic-form'
+
 export default defineComponent({
   name: 'dynamic-form-radio-field-item',
   props: {
@@ -24,7 +26,7 @@ export default defineComponent({
       required: true,
     },
     model: {
-      type: Object as PropType<KeyMap<any>>,
+      type: Object,
       required: true,
     },
   },

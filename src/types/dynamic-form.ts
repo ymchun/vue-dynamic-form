@@ -1,9 +1,9 @@
-interface DynamicFormConfig {
-  model: KeyMap<any>
+export interface DynamicFormConfig {
+  model: { [key: string]: any }
   section: DynamicFormSectionItemConfig
 }
 
-interface DynamicFormSectionItemConfig {
+export interface DynamicFormSectionItemConfig {
   orientation: 'row' | 'column'
   items: Array<DynamicFormSectionItemConfig | DynamicFormFieldItemConfig>
   align?: {
@@ -16,11 +16,11 @@ interface DynamicFormSectionItemConfig {
   size?: string // css compatible size, width for column, height for row
 }
 
-interface DynamicFormFieldItemConfig {
+export interface DynamicFormFieldItemConfig {
   component: string // form field item component class name
-  data?: any | any[] | KeyMap<any> // data supply to vuetify component
+  data?: any | any[] | { [key: string]: any } // data supply to vuetify component
   hidden?: boolean // flag determine whether to show the item
-  listeners?: KeyMap<any> // bind to form field item vuetify component props
-  properties?: KeyMap<any> // bind to form field item vuetify component props
+  listeners?: { [key: string]: any } // bind to form field item vuetify component props
+  properties?: { [key: string]: any } // bind to form field item vuetify component props
   size?: string // css compatible size, width for column, height for row
 }

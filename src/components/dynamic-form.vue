@@ -12,6 +12,7 @@
 <script lang="ts">
 import { PropType, computed, defineComponent, reactive } from '@vue/composition-api'
 
+import { DynamicFormConfig } from '../types/dynamic-form'
 import ColumnSectionItem from './column-section-item.vue'
 import RowSectionItem from './row-section-item.vue'
 
