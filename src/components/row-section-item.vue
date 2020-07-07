@@ -19,15 +19,15 @@
 <script lang="ts">
 import { PropType, computed, defineComponent, reactive } from '@vue/composition-api'
 
-import ButtonFieldItem from './fieldItems/ButtonFieldItem.vue'
-import CheckboxFieldItem from './fieldItems/CheckboxFieldItem.vue'
-import ComboboxFieldItem from './fieldItems/ComboxFieldItem.vue'
-import DateFieldItem from './fieldItems/DateFieldItem.vue'
-import RadioFieldItem from './fieldItems/RadioFieldItem.vue'
-import SelectFieldItem from './fieldItems/SelectFieldItem.vue'
-import SwitchFieldItem from './fieldItems/SwitchFieldItem.vue'
-import TextAreaFieldItem from './fieldItems/TextAreaFieldItem.vue'
-import TextFieldItem from './fieldItems/TextFieldItem.vue'
+import ButtonFieldItem from './field-items/button-field-item.vue'
+import CheckboxFieldItem from './field-items/checkbox-field-item.vue'
+import ComboboxFieldItem from './field-items/combobox-field-item.vue'
+import DateFieldItem from './field-items/date-field-item.vue'
+import RadioFieldItem from './field-items/radio-field-item.vue'
+import SelectFieldItem from './field-items/select-field-item.vue'
+import SwitchFieldItem from './field-items/switch-field-item.vue'
+import TextAreaFieldItem from './field-items/textarea-field-item.vue'
+import TextFieldItem from './field-items/text-field-field-item.vue'
 
 export default defineComponent({
   name: 'dynamic-form-row-section-item',
