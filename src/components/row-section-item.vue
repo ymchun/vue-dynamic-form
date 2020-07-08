@@ -28,7 +28,7 @@ import RadioFieldItem from './field-items/radio-field-item.vue'
 import SelectFieldItem from './field-items/select-field-item.vue'
 import SwitchFieldItem from './field-items/switch-field-item.vue'
 import TextAreaFieldItem from './field-items/textarea-field-item.vue'
-import TextFieldItem from './field-items/text-field-field-item.vue'
+import TextFieldItem from './field-items/textfield-field-item.vue'
 
 export default defineComponent({
   name: 'dynamic-form-row-section-item',

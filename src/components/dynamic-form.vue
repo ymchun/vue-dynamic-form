@@ -1,8 +1,8 @@
 <template lang="pug">
   v-form(lazy-validation)
     component(
-      :is="sectionType"
       :config="config.section"
+      :is="state.sectionType"
       :model="config.model"
       ref="child"
       v-if="!config.hidden"
