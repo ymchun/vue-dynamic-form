@@ -9,6 +9,9 @@ module.exports = {
         happyPackMode: false,
         transpileOnly: false,
       }))
+    config.merge({
+      externals: ['vue', '@vue/composition-api'],
+    })
   },
   css: {
     extract: false,
