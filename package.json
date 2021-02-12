@@ -1,6 +1,6 @@
 {
   "name": "@ymchun/vue-dynamic-form",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "main": "vue-dynamic-form.common.js",
   "repository": "github:ymchun/vue-dynamic-form",
