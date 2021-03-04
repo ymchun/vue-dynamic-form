@@ -1,19 +1,15 @@
 <template lang="pug">
-  v-layout(
-    column nowrap
-    :style="state.style"
-    v-bind="state.align"
+v-layout(column, nowrap, :style='state.style', v-bind='state.align')
+  component(
+    v-for='(item, index) in config.items',
+    :key='index',
+    :is='getComponent(item)',
+    :style='getComponentStyle(item)',
+    :config='item',
+    :model='model',
+    ref='child',
+    v-if='!item.hidden'
   )
-    component(
-      v-for="(item, index) in config.items"
-      :key="index"
-      :is="getComponent(item)"
-      :style="getComponentStyle(item)"
-      :config="item"
-      :model="model"
-      ref="child"
-      v-if="!item.hidden"
-    )
 </template>
 
 <script lang="ts">

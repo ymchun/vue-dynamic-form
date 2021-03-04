@@ -1,11 +1,11 @@
 <template lang="pug">
-  v-combobox(
-    :items="config.data"
-    ref="element"
-    v-bind="config.properties"
-    v-model="model[config.properties.name]"
-    v-on="config.listeners"
-  )
+v-combobox(
+  :items='config.data',
+  ref='element',
+  v-bind='config.properties',
+  v-model='model[config.properties.name]',
+  v-on='config.listeners'
+)
 </template>
 
 <script lang="ts">

@@ -1,8 +1,5 @@
 <template lang="pug">
-  v-btn(
-    v-bind="config.properties"
-    v-on="config.listeners"
-  ) {{ config.properties.label }}
+v-btn(v-bind='config.properties', v-on='config.listeners') {{ config.properties.label }}
 </template>
 
 <script lang="ts">

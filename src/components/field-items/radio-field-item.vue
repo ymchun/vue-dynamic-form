@@ -1,16 +1,16 @@
 <template lang="pug">
-  v-radio-group(
-    ref="element"
-    v-bind="config.properties"
-    v-model="model[config.properties.name]"
-    v-on="config.listeners"
+v-radio-group(
+  ref='element',
+  v-bind='config.properties',
+  v-model='model[config.properties.name]',
+  v-on='config.listeners'
+)
+  v-radio(
+    v-for='(value, label, index) in config.data',
+    :key='index',
+    :label='label',
+    :value='value'
   )
-    v-radio(
-      v-for="(value, label, index) in config.data"
-      :key="index"
-      :label="label"
-      :value="value"
-    )
 </template>
 
 <script lang="ts">

@@ -1,22 +1,19 @@
 <template lang="pug">
-  v-menu(
-    lazy offset-y
-    :disabled="config.properties.disabled"
-    content-class="menu-width-adjust"
+v-menu(lazy, offset-y, :disabled='config.properties.disabled', content-class='menu-width-adjust')
+  v-text-field(
+    ref='element',
+    slot='activator',
+    v-bind='config.properties',
+    v-model='model[config.properties.name]',
+    v-on='config.listeners'
   )
-    v-text-field(
-      ref="element"
-      slot="activator"
-      v-bind="config.properties"
-      v-model="model[config.properties.name]"
-      v-on="config.listeners"
-    )
-    v-date-picker(
-      :allowed-dates="allowedDates"
-      :disabled="config.properties.disabled"
-      reactive no-title
-      v-model="model[config.properties.name]"
-    )
+  v-date-picker(
+    :allowed-dates='allowedDates',
+    :disabled='config.properties.disabled',
+    reactive,
+    no-title,
+    v-model='model[config.properties.name]'
+  )
 </template>
 
 <script lang="ts">
